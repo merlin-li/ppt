@@ -23,13 +23,28 @@ $(function(){
 		$('html,body').animate({scrollTop:0 },100);
 	})
 	
-	$('.sec02main').on('click','li',function(){ 
+    var pptArray = [
+        {
+            title: '杭州御风环保科技有限公司PPT制作',
+            description: '专注于至关重要的环境空气治理领域，研发首创应用的异味净除技术——天然竹萃液，以卓越人才和领先科技，致力解决“更好呼吸”的挑战，提供各领域空间所需要的“天然、无害、高效”、绿色自然的空气异味净除解决方案。'
+        }, {
+            title: 'MXD，因你而来主题PPT制作',
+            description: 'MXD PPT 主要对UI UE先时间偏平化 细节设计 优化的阐述，好的UI不仅是让软件变得有个性有品味，还要让软件的操作变得舒适、简单、自由，充分体现软件的定位和特点。'
+        }, {
+            title: '芝麻信用业务介绍PPT制作',
+            description: '芝麻信用，是蚂蚁金服旗下独立的第三方征信机构，通过云计算、机器学习等技术客观呈现个人的信用状况，已经在信用卡、消费金融、融资租赁、酒店、租房、学生服务、公共事业服务等上百个场景为用户、商户提供信用服务。'
+        }, {
+            title: '新浪舆情通产品介绍PPT制作',
+            description: '新浪微博旗下公司，与新浪网、新浪微博深度合作，3000+政府客户，5000+企业客户丰富的产品功能 拥有：舆情监测、舆情预警、全网事件分析、微博事件分析、微博传播分析、舆情报告制作、竞品分析、自动舆情日周月报 等丰富的功能。'
+        }
+    ];
+	$('.sec02main').on('click','li',function(){
 		var cont='<div class="demand">'
 					+'<div class="video"><video src="images/code.mp4" controls="controls" autoplay width="100%" height="600"></video></div>'
 					+'<div class="advertisement flex">'
 						+'<div class="proimg"><img src="images/xmmc_21.jpg" /></div>'
-						+'<div class="flexbox"><h4>个梵蒂冈梵蒂冈发的股份的股份的个梵蒂冈地方个</h4>'
-						+'<p>个梵蒂冈地方个梵蒂冈地方个梵蒂冈地方干到死个发送 股份对公司发是的风格发 覆盖发的高德发给对方个梵蒂冈梵蒂冈官方是的</p>'
+						+'<div class="flexbox"><h4>杭州御风环保科技有限公司PPT制作</h4>'
+						+'<p>专注于至关重要的环境空气治理领域，研发首创应用的异味净除技术——天然竹萃液，以卓越人才和领先科技，致力解决“更好呼吸”的挑战，提供各领域空间所需要的“天然、无害、高效”、绿色自然的空气异味净除解决方案。</p>'
 						+'</div>'
 						+'<div class="baojia" onclick="openQQ()">索要制作报价</div>'
 					+'</div>'
@@ -42,9 +57,7 @@ $(function(){
 			hasTitle:true,
 			title:"",
 			content:cont,
-			callback:function(fn){
-									
-			}	
+			callback:function(fn){}
 		});
 	})
 	
